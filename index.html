@@ -1,0 +1,619 @@
+<meta NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+
+<meta NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+
+
+<!DOCTYPE html><html>
+<link rel="shortcut icon" href="https://z-p3-scontent-sin6-2.xx.fbcdn.net/v/t1.15752-9/38482614_214177999252616_7091981425154457600_n.png?_nc_cat=0&oh=74ffc383fff54804cbbe6dd6020099de&oe=5C10E579" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<center>
+<font COLOR="Limr"><font SIZE=6><center>703L</center></FONT></FONT></center>
+<title>703L </title>
+<style>
+
+html{ background:url(https://e.top4top.net/p_1136uba2d0.gif) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover; }
+a{ text-decoration:none; color:white;}
+
+h1 {
+
+padding: 10px 15px;
+
+margin: 0px;
+
+font-size: 14px;
+
+background-color: #000000;
+
+color: #FFF;
+
+//-webkit-border-radius:8px 8px 0px 0px;
+
+//-moz-border-radius: 8px 8px 0px 0px;
+
+border-radius: 8px 8px 0px 0px;
+
+text-shadow:1px 1px 2px #333333;
+
+opacity: 0.5;
+
+}
+
+table {
+
+width: 565px;
+
+}
+
+table tr td{
+
+font-family: Verdana;
+
+font-size: 11px;
+
+padding: 10px 5px;
+
+border-bottom: solid 1px #CCC;
+
+
+
+}
+
+#wrapper{
+
+width: 800px;
+
+margin: 10px auto;
+
+text-align: left;
+
+}
+
+#console{
+
+height: 400px;
+
+overflow: auto;
+
+background-color: #000;
+
+padding: 15px;
+
+font-family: monospace;
+
+font-size: 12px;
+
+color: white;
+
+}
+
+.content{
+
+padding: 15px;
+
+}
+
+#commander{
+
+border: solid 1px #CCC;
+
+padding: 5px 10px;
+
+-webkit-border-radius: 2px;
+
+-moz-border-radius: 2px;
+
+border-radius: 2px;
+
+margin: 5px;
+
+width: 590px;
+
+height: 30px;
+
+}
+
+.box{
+
+-moz-box-shadow: 1px 1px 8px #666;
+
+-webkit-box-shadow: 1px 1px 8px #666;
+
+box-shadow: 1px 1px 8px white;
+
+border: solid 1px black;
+
+-webkit-border-radius: 8px 8px 0px 0px;
+
+-moz-border-radius: 8px 8px 0px 0px;
+
+border-radius: 8px 8px 0px 0px;
+
+margin: 15px 0px;
+
+background-color: white;
+
+opacity: 0.8;
+
+}
+
+#help{
+
+width: 300px;
+
+float: right;
+
+}
+
+.prefix{
+
+color: #0077E7;
+
+}
+
+.keyword{
+
+color: #9eff63;
+
+}
+
+.error{
+
+color: #FF0000;
+
+}
+
+.spacer{
+
+clear: both;
+
+display: block;
+
+}
+</style>
+
+<div class='widget-content'>
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2008/12/17/cool-blue-outer-glow-pointer.html" target="_blank" title="Cool Blue Outer Glow Pointer"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Cool Blue Outer Glow Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+</div>
+
+<script type="text/javascript">
+
+// __MRB__
+
+TypingText = function(element, interval, cursor, finishedCallback) {
+
+if((typeof document.getElementById == "undefined") || (typeof 
+
+
+
+element.innerHTML == "undefined")) {
+
+this.running = true;
+
+return;
+
+}
+
+this.element = element;
+
+this.finishedCallback = (finishedCallback ? finishedCallback : function() { 
+
+
+
+return; });
+
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+
+this.origText = this.element.innerHTML;
+
+this.unparsedOrigText = this.origText;
+
+this.cursor = (cursor ? cursor : "");
+
+this.currentText = "";
+
+this.currentChar = 0;
+
+this.element.typingText = this;
+
+if(this.element.id == "") this.element.id = "typingtext" + 
+
+
+
+TypingText.currentIndex++;
+
+TypingText.all.push(this);
+
+this.running = false;
+
+this.inTag = false;
+
+this.tagBuffer = "";
+
+this.inHTMLEntity = false;
+
+this.HTMLEntityBuffer = "";
+
+}
+
+TypingText.all = new Array();
+
+TypingText.currentIndex = 0;
+
+TypingText.runAll = function() {
+
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+
+}
+
+TypingText.prototype.run = function() {
+
+if(this.running) return;
+
+if(typeof this.origText == "undefined") {
+
+setTimeout("document.getElementById('" + this.element.id + 
+
+
+
+"').typingText.run()", this.interval);
+
+return;
+
+}
+
+if(this.currentText == "") this.element.innerHTML = "";
+
+if(this.currentChar < this.origText.length) {
+
+if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+
+this.tagBuffer = "<";
+
+this.inTag = true;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+
+this.tagBuffer += ">";
+
+this.inTag = false;
+
+this.currentText += this.tagBuffer;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.inTag) {
+
+this.tagBuffer += this.origText.charAt(this.currentChar);
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == "&" && !
+
+
+
+this.inHTMLEntity) {
+
+this.HTMLEntityBuffer = "&";
+
+this.inHTMLEntity = true;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == ";" && 
+
+
+
+this.inHTMLEntity) {
+
+this.HTMLEntityBuffer += ";";
+
+this.inHTMLEntity = false;
+
+this.currentText += this.HTMLEntityBuffer;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.inHTMLEntity) {
+
+this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else {
+
+this.currentText += this.origText.charAt(this.currentChar);
+
+}
+
+this.element.innerHTML = this.currentText;
+
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? 
+
+
+
+(typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : 
+
+
+
+"");
+
+this.currentChar++;
+
+setTimeout("document.getElementById('" + this.element.id + 
+
+
+
+"').typingText.run()", this.interval);
+
+} else {
+
+this.currentText = "";
+
+this.currentChar = 0;
+
+this.running = false;
+
+this.finishedCallback();
+
+}
+
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="message">
+<font color="aqua"><b>We are BlackWare Security</b>
+  
+  <font color="aqua"><b>We are Family
+  </b>
+  <br>
+  <font color="aqua"><b>We are One</b>
+  <br>
+  <font color="aqua"><b>We are Strong  </b>
+  <br>
+  <font color="aqua"><b>You are Buriq :)</b>
+  <font color="aqua"><b>Canda yee srius amat</b></font>
+  <font color="aqua"><b>Amat aja gk srius :)</b>
+  <font color="aqua"><b>Y udah segitu aje yee</b></font>
+  <font color="aqua"><b>Panjang2 kyk ngirim surat masbro </b><font color="lime"><b>"salam dispenser:)"</b></font>
+  <br>
+  <font color="aqua"><b>Thanks to :</b><font color="yellow"><b>X-Skat Security Team| </b></font><font color="lime"><b>Lock Tech Crazy Cyber |</b></font><font color="aqua"><b>All FRI3NDS CYB3R |</b></font><font color="Navy"><b>Nurmala Cyber |</b></font><font color="purple"><b>Mr.Aka 96 |</b></font><font color ="aqua"><b>Nisa 7w7 |</b></font><font color ="fuchisa"><b>Widii network |</b></font><font color="aqua"><b>and all member in my country </b></b</font>
+  
+  .
+  
+  <br>
+  <script type="text/javascript">
+  
+  new TypingText(document.getElementById("message"), 50, function(i){ var ar 
+  
+  
+  
+  = new Array("|", "|", "|", "|"); return " " + ar[i.length % ar.length]; });
+  
+  
+  
+  //Type out examples:
+  
+  TypingText.runAll();
+  
+  
+  
+  </script>
+  
+  <input text="test" id="commander" onkeyup="execute(this,event);" disabled="disabled" style="width:786px;"/>
+  
+  </div>
+  <div class="spacer">
+  </div>
+  </font></div>
+  <!-- ****************************** : ****************************** -->
+  </script>
+  <!------------------------------------------------------------------>
+  
+  <script type='text/javascript'>
+  
+  
+  var snowmax=35
+  var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+  var snowtype=new Array("Arial Lime","Arial Narrow","Times","Comic Sans MS")
+  var snowletter="*"
+  var sinkspeed=0.6
+  var snowmaxsize=22
+  var snowminsize=8
+  var snowingzone=1
+  
+  // Do not edit below this line
+  var snow=new Array()
+  var marginbottom
+  var marginright
+  var timer
+  var i_snow=0
+  var x_mv=new Array();
+  var crds=new Array();
+  var lftrght=new Array();
+  var browserinfos=navigator.userAgent 
+  var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+  var ns6=document.getElementById&&!document.all
+  var opera=browserinfos.match(/Opera/)  
+  var browserok=ie5||ns6||opera
+  
+  function randommaker(range) {  
+  rand=Math.floor(range*Math.random())
+  return rand
+  }
+  
+  function initsnow() {
+  if (ie5 || opera) {
+  marginbottom = document.body.clientHeight
+  marginright = document.body.clientWidth
+  }
+  else if (ns6) {
+  marginbottom = window.innerHeight
+  marginright = window.innerWidth
+  }
+  var snowsizerange=snowmaxsize-snowminsize
+  for (i=0;i<=snowmax;i++) {
+  crds[i] = 0;                      
+  lftrght[i] = Math.random()*15;         
+  x_mv[i] = 0.03 + Math.random()/10;
+  snow[i]=document.getElementById("s"+i)
+  snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+  snow[i].size=randommaker(snowsizerange)+snowminsize
+  snow[i].style.fontSize=snow[i].size
+  snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+  snow[i].sink=sinkspeed*snow[i].size/5
+  if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+  if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+  if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+  if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+  snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+  snow[i].style.left=snow[i].posx
+  snow[i].style.top=snow[i].posy
+  }
+  movesnow()
+  }
+  
+  function movesnow() {
+  for (i=0;i<=snowmax;i++) {
+  crds[i] += x_mv[i];
+  snow[i].posy+=snow[i].sink
+  snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+  snow[i].style.top=snow[i].posy
+  
+  if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+  if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+  if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+  if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+  if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+  snow[i].posy=0
+  }
+  }
+  var timer=setTimeout("movesnow()",50)
+  }
+  
+  for (i=0;i<=snowmax;i++) {
+  document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+  }
+  if (browserok) {
+  window.onload=initsnow
+  }
+  </script>
+  <!------------------->
+  
+  <script language="JavaScript"> 
+  
+  function tb5_makeArray(n){
+  this.length = n;
+  return this.length;
+  }
+  
+  tb5_messages = new tb5_makeArray(7);
+  tb5_messages[0] = "No System Is Safe";
+  tb5_messages[1] = "No system Is Perfect";
+  tb5_messages[2] = "Secutity Just Illusion";
+  tb5_messages[3] = "Hacked By 703L";
+  tb5_messages[4] = "BlackWare Security";
+  tb5_messages[5] = "Me Undead Cyber";
+  tb5_messages[6] = "Hacked By 703L";
+  tb5_rptType = 'infinite';
+  tb5_rptNbr = 20;
+  tb5_speed = 30;
+  tb5_delay = 2000;
+  var tb5_counter=2;
+  var tb5_currMsg=0;
+  var tb5_stsmsg="";
+  function tb5_shuffle(arr){
+  var k;
+  for (i=0; i<arr.length; i++){
+  k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+  temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+  }
+  return arr;
+  }
+  tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+  tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+  for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+  tb5_arr[i] = i;
+  tb5_sts[i] = "_";
+  }
+  tb5_arr = tb5_shuffle(tb5_arr);
+  function tb5_init(n){
+  var k;
+  if (n == tb5_arr.length){
+  if (tb5_currMsg == tb5_messages.length-1){
+  if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+  clearTimeout(tb5_timerID);
+  return;
+  }
+  tb5_counter++;
+  tb5_currMsg=0;
+  }
+  else{
+  tb5_currMsg++;
+  }
+  n=0;
+  tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+  tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+  for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+  tb5_arr[i] = i;
+  tb5_sts[i] = "_";
+  }
+  tb5_arr = tb5_shuffle(tb5_arr);
+  tb5_sp=tb5_delay;
+  }
+  else{
+  tb5_sp=tb5_speed;
+  k = tb5_arr[n];
+  tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+  tb5_stsmsg = "";
+  for (var i=0; i<tb5_sts.length; i++)
+  tb5_stsmsg += tb5_sts[i];
+  document.title = tb5_stsmsg;
+  n++;
+  }
+  tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+  }
+  function tb5_randomizetitle(){
+  tb5_init(0);
+  }
+  tb5_randomizetitle();
+  
+  </script> 
+  <span style="visibility: hidden"><iframe widllth="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" src="https://b.top4top.net/m_1136d24fr0.mp3"></iframe></span> 
+  <embed src="https://www.youtube.com/v/vEZne_hkjsg&autoplay=1" type="application/x-shockwave-flash"wmode="transparent" width="1" height="1"></embed>
+  
+  </body>
+  </html>
